@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+
 
 // Mengatur direktori statis
 app.use(express.static(path.join(__dirname, "public")));
@@ -51,6 +51,7 @@ app.post("/upload", (req, res) => {
 });
 
 // Menjalankan server
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
