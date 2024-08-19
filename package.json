@@ -7,8 +7,11 @@
   },
 
   "scripts": {
-    "build": "node server.js"
-  }
+    "build": "index.html"
+  },
 
+  "scripts": {
+    "start": "node server.js"
+  }
   
 }
